@@ -49,6 +49,7 @@ const Container = styled.div`
 `;
 
 const Nav = styled.div`
+overflow-x:hidden;
   height: 70px;
   background: #090b13;
   display: flex;
