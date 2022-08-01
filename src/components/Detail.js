@@ -1,7 +1,32 @@
-import React from 'react'
+import React, { useState ,useEffect} from 'react'
 import styled from 'styled-components'
+import { useParams } from 'react-router-dom'
+import db from '../firebase';
+
 
 function Detail() {
+const { id } =useParams();
+const [movie,setMovie] =useState()
+
+useEffect(() => {
+db.collection("movies")
+.doc(id)
+.get()
+.then((doc) => {
+
+  if(doc.exists){
+    setMovie(doc.data());
+  }else{
+
+  }
+})
+
+},[])
+
+console.log("This is Movie ", movie);
+
+
+
   return (
 <Container>
 <Background>
@@ -12,12 +37,12 @@ function Detail() {
 </ImgTitle>
 <Controls>
 <PlayButton>
-<img src='/images/play-icon-black.png'/>
+<img src='/images/play-icon-black.png' alt="no"/>
 <spa>Play</spa>
 </PlayButton>
 
 <TrailerButton>
-<img src='/images/play-icon-white.png'/>
+<img src='/images/play-icon-white.png' alt='no'/>
 <spa>Trailer</spa>
 </TrailerButton>
 
@@ -68,6 +93,7 @@ img{
 
 const ImgTitle =styled.div`
 height:30vh;
+margin-top:60px;
 min-height:170px;
 width:35vw;
 min-width:200px;
@@ -139,4 +165,5 @@ line-height:1.4;
 font-size:20px;
 margin-top:16px;
 color:rgb(249,249,249);
+max-width:500%;
 `

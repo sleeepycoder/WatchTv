@@ -1,25 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
+import { selectMovies } from '../features/movie/movieSlice';
+import { useSelector } from 'react-redux';
+import { Link } from "react-router-dom";
 
 function Movies() {
+const movies =useSelector(selectMovies);
+
+
+
+
+
   return (
     <Container>
 <h4> Recommende for you</h4>
 
 <Content>
-<Wrap>
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRRL9H0eLGKh9jyI8Qlf0HaRLQqsTAtpmmLg&usqp=CAU' alt='no'  />
+{movies && 
+movies.map((movie)=>
+<Wrap key={movie.id}>
+<Link to={`/detail/${movie.id}`}>
+<img src={movie.cardImg} alt='no'  />
+</Link>
+    <img src={movie.cardImg} alt='no'  />
 </Wrap>
+)}
 
-<Wrap>
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRRL9H0eLGKh9jyI8Qlf0HaRLQqsTAtpmmLg&usqp=CAU' alt='no'  />
-</Wrap>
-<Wrap>
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRRL9H0eLGKh9jyI8Qlf0HaRLQqsTAtpmmLg&usqp=CAU' alt='no'  />
-</Wrap>
-<Wrap>
-    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRRL9H0eLGKh9jyI8Qlf0HaRLQqsTAtpmmLg&usqp=CAU' alt='no'  />
-</Wrap>
+
 </Content>
     </Container>
       
@@ -41,7 +48,7 @@ grid-template-columns:repeat(4,minmax(0,1fr));
   `
 
   const Wrap =styled.div`
-
+height:200px;
   overflow:hidden;
   cursor:pointer;
 border-radius:30px;
