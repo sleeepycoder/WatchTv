@@ -3,8 +3,6 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import { getStorage} from "firebase/storage";
 
-import {getAuth} from 'firebase/auth';
-
 
 
 
@@ -21,12 +19,16 @@ const firebaseConfig = {
   measurementId: "G-V0W0X2WGND"
 };
 
+
+
 const firebaseApp=firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
-const auth = getAuth(firebaseApp);
+// const auth = getAuth();
+const auth = firebase.auth();
+
 const provider = new firebase.auth.GoogleAuthProvider();
 const storage =getStorage(firebaseApp);
-
+// const provider = new GoogleAuthProvider();
 
 export { auth, provider, storage };
 export default db;
