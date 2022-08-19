@@ -1,7 +1,7 @@
 {
   "name": "watch-tv",
   "version": "0.1.0",
-  " homepage": "https://github.com/spankaj0592-rock/WatchTv",
+  " homepage": "https://github.com/spankaj0592-rock/WatchTv/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
