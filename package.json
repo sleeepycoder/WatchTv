@@ -1,7 +1,7 @@
 {
   "name": "disney-plus-clone",
   "version": "0.1.0",
-  " https": "https://spankaj0592-rock.github.io/Watch-TV/ ",
+  " https": "https://spankaj0592-rock.github.io/Watch-TV",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
