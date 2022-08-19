@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc01b513.css",
-    "main.js": "/static/js/main.dd3c0cdf.js",
-    "static/js/787.32e4b1d4.chunk.js": "/static/js/787.32e4b1d4.chunk.js",
-    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/index.html",
-    "main.dc01b513.css.map": "/static/css/main.dc01b513.css.map",
-    "main.dd3c0cdf.js.map": "/static/js/main.dd3c0cdf.js.map",
-    "787.32e4b1d4.chunk.js.map": "/static/js/787.32e4b1d4.chunk.js.map"
+    "main.css": "/WatchTv/static/css/main.eaf190ff.css",
+    "main.js": "/WatchTv/static/js/main.06772f71.js",
+    "static/js/787.32e4b1d4.chunk.js": "/WatchTv/static/js/787.32e4b1d4.chunk.js",
+    "static/media/slick.svg": "/WatchTv/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/WatchTv/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/WatchTv/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/WatchTv/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/WatchTv/index.html",
+    "main.eaf190ff.css.map": "/WatchTv/static/css/main.eaf190ff.css.map",
+    "main.06772f71.js.map": "/WatchTv/static/js/main.06772f71.js.map",
+    "787.32e4b1d4.chunk.js.map": "/WatchTv/static/js/787.32e4b1d4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc01b513.css",
-    "static/js/main.dd3c0cdf.js"
+    "static/css/main.eaf190ff.css",
+    "static/js/main.06772f71.js"
   ]
 }
